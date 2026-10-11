@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Archive & Collections | NOVA DESIGN STUDIO | Digital Couture Drops</title>
+    <meta name="title" content="Archive & Collections | NOVA DESIGN STUDIO | Digital Couture Drops">
+    <meta name="description" content="Explore chronological archive drops by NOVA DESIGN STUDIO. Cyber-knit textiles, liquid silks, and virtual garments crafted for digital avatars and physical runways.">
+    <meta name="keywords" content="Nova collections, digital couture archive, fashion drops, virtual garments, 3D fashion editorial, cyber streetwear">
+    <meta name="author" content="NOVA DESIGN STUDIO">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://nova-design-studio.onrender.com/collections.html">
+
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="theme-color" content="#080808">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nova-design-studio.onrender.com/collections.html">
+    <meta property="og:site_name" content="NOVA DESIGN STUDIO">
+    <meta property="og:title" content="Archive & Collections | NOVA DESIGN STUDIO">
+    <meta property="og:description" content="Chronological evolution of digital couture and cyber streetwear. Discover the latest limited drops.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1539109132314-3477524c8d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nova-design-studio.onrender.com/collections.html">
+    <meta property="twitter:title" content="Archive & Collections | NOVA DESIGN STUDIO">
+    <meta property="twitter:description" content="Chronological evolution of digital couture and cyber streetwear. Discover the latest limited drops.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1539109132314-3477524c8d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "NOVA DESIGN STUDIO Archive & Collections",
+      "url": "https://nova-design-studio.onrender.com/collections.html",
+      "description": "Chronological evolution of digital couture and experimental streetwear drops.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Drop 01: The Void (Archive 2024)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Drop 02: Neon Grid (Edition 2024)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Drop 03: Cyber-Knit (Archive 2023)"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nova-black': '#080808',
+                        'nova-neon': '#ccff00',
+                        'nova-gray': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/nova.css">
+    <script src="js/nova.js" defer></script>
+</head>
+<body class="antialiased bg-[#080808] text-white selection:bg-[#ccff00] selection:text-black">
+
+    <!-- Global Header -->
+    <header>
+        <nav class="fixed top-0 left-0 w-full z-50 px-6 sm:px-10 py-6 sm:py-8 flex justify-between items-center backdrop-blur-md bg-[#080808]/50 border-b border-white/5 transition-all duration-300">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group" aria-label="NOVA STUDIO Home">
+                <div class="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center group-hover:border-[#ccff00] transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-none stroke-current text-white group-hover:text-[#ccff00] transition-colors" stroke-width="2">
+                        <path d="M4 18V6l8 10V6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16l8-10v12" stroke="#ccff00" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="text-xl sm:text-2xl font-bold tracking-tighter brand-font">NOVA STUDIO<span class="text-[#ccff00]">.</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-10 text-[11px] uppercase font-bold tracking-[0.3em]">
+                <a href="index.html" class="hover-link text-gray-300 hover:text-white">Home</a>
+                <a href="collections.html" class="hover-link active-nav text-[#ccff00]" aria-current="page">Archive</a>
+                <a href="designer.html" class="hover-link text-gray-300 hover:text-white">The Designer</a>
+                <a href="connect.html" class="hover-link text-gray-300 hover:text-white">Connect</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-end w-10 h-10 space-y-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ccff00] p-1 rounded" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span class="w-7 h-0.5 bg-white transition-transform"></span>
+                <span class="w-5 h-0.5 bg-[#ccff00] transition-all"></span>
+                <span class="w-6 h-0.5 bg-white transition-transform"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Slide-over Drawer -->
+    <div id="mobile-menu-drawer" class="fixed inset-0 z-[100] hidden opacity-0 transition-opacity duration-300 mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-xl" id="mobile-menu-close"></div>
+        <div class="absolute top-0 right-0 w-full sm:w-80 h-full bg-[#0d0d0d] border-l border-white/10 p-8 flex flex-col justify-between transform translate-x-full mobile-nav-panel">
+            <div>
+                <div class="flex justify-between items-center mb-12">
+                    <span class="text-xs uppercase font-bold tracking-[0.3em] text-[#ccff00]">Navigation</span>
+                    <button class="text-white hover:text-[#ccff00] p-2 text-xl focus:outline-none" aria-label="Close menu" onclick="document.getElementById('mobile-menu-close').click()">
+                        ✕
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-6 text-xl uppercase font-black tracking-tight">
+                    <a href="index.html" class="mobile-nav-link text-gray-300 hover:text-white">Home</a>
+                    <a href="collections.html" class="mobile-nav-link text-[#ccff00]">Archive</a>
+                    <a href="designer.html" class="mobile-nav-link text-gray-300 hover:text-white">The Designer</a>
+                    <a href="connect.html" class="mobile-nav-link text-gray-300 hover:text-white">Connect</a>
+                </nav>
+            </div>
+            <div class="pt-8 border-t border-white/10">
+                <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-500 block mb-4">Direct Inquiries</span>
+                <a href="mailto:hello@novastudio.com" class="text-sm font-light text-gray-300 hover:text-[#ccff00] transition-colors">hello@novastudio.com</a>
+                <div class="flex space-x-6 mt-6 text-xs text-gray-400 font-semibold tracking-wider">
+                    <a href="#" class="hover:text-[#ccff00]">Instagram</a>
+                    <a href="#" class="hover:text-[#ccff00]">TikTok</a>
+                    <a href="#" class="hover:text-[#ccff00]">X / Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <main>
+        <section class="pt-36 sm:pt-48 pb-12 sm:pb-16 px-6 sm:px-10 max-w-7xl mx-auto">
+            <div class="nova-reveal">
+                <span class="text-[#ccff00] text-[10px] uppercase font-bold tracking-[0.4em] mb-4 block">Archive Curations</span>
+                <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter uppercase mb-6 leading-none">
+                    ARCHIVE<span class="editorial-serif italic font-normal text-[#ccff00]">.</span>
+                </h1>
+                <p class="text-gray-400 text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase max-w-xl">
+                    Chronological evolution of digital couture, physical prototypes & synthetic street garments.
+                </p>
+            </div>
+        </section>
+
+        <!-- Collections Grid -->
+        <section class="pb-36 px-6 sm:px-10 max-w-7xl mx-auto" aria-label="Collections Grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+                
+                <!-- Drop 01 -->
+                <article class="nova-reveal group border border-white/10 bg-[#0e0e0e] p-4 rounded-sm transition-all duration-500 hover:border-[#ccff00]/50 hover:shadow-2xl">
+                    <div class="relative overflow-hidden aspect-[3/4] mb-5 bg-neutral-900">
+                        <img src="https://images.unsplash.com/photo-1539109132314-3477524c8d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Drop 01 The Void - Volumetric digital couture silhouette model" 
+                             class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-[#ccff00] border border-[#ccff00]/30">
+                            Available Now
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] font-black tracking-[0.4em] uppercase border border-white px-6 py-2.5 bg-black/60 backdrop-blur-sm text-white group-hover:bg-[#ccff00] group-hover:text-black group-hover:border-[#ccff00] transition-colors">
+                                View Lookbook
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h2 class="text-lg font-black tracking-tight uppercase group-hover:text-[#ccff00] transition-colors">Drop 01: The Void</h2>
+                        <span class="text-xs font-mono text-gray-500">12 Pcs</span>
+                    </div>
+                    <p class="text-gray-400 text-xs font-light mb-3">Experimental liquid silk drapery with cybernetic structural boning.</p>
+                    <div class="text-[10px] uppercase tracking-widest text-[#ccff00] font-bold">Archive 2024</div>
+                </article>
+
+                <!-- Drop 02 -->
+                <article class="nova-reveal group border border-white/10 bg-[#0e0e0e] p-4 rounded-sm transition-all duration-500 hover:border-[#ccff00]/50 hover:shadow-2xl" style="transition-delay: 100ms;">
+                    <div class="relative overflow-hidden aspect-[3/4] mb-5 bg-neutral-900">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Drop 02 Neon Grid - High fashion model walking down urban runway" 
+                             class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-white border border-white/20">
+                            Coming Q3
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] font-black tracking-[0.4em] uppercase border border-white px-6 py-2.5 bg-black/60 backdrop-blur-sm text-white group-hover:bg-[#ccff00] group-hover:text-black group-hover:border-[#ccff00] transition-colors">
+                                Waitlist Access
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h2 class="text-lg font-black tracking-tight uppercase group-hover:text-[#ccff00] transition-colors">Drop 02: Neon Grid</h2>
+                        <span class="text-xs font-mono text-gray-500">08 Pcs</span>
+                    </div>
+                    <p class="text-gray-400 text-xs font-light mb-3">UV-reactive phosphorescent weaves and oversized angular outerwear.</p>
+                    <div class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Autumn / Winter</div>
+                </article>
+
+                <!-- Drop 03 -->
+                <article class="nova-reveal group border border-white/10 bg-[#0e0e0e] p-4 rounded-sm transition-all duration-500 hover:border-[#ccff00]/50 hover:shadow-2xl" style="transition-delay: 200ms;">
+                    <div class="relative overflow-hidden aspect-[3/4] mb-5 bg-neutral-900">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Drop 03 Cyber-Knit - Textured high-fashion oversized digital knitwear" 
+                             class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                             loading="lazy">
+                        <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-gray-300 border border-white/20">
+                            Archived
+                        </div>
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="text-[10px] font-black tracking-[0.4em] uppercase border border-white px-6 py-2.5 bg-black/60 backdrop-blur-sm text-white group-hover:bg-[#ccff00] group-hover:text-black group-hover:border-[#ccff00] transition-colors">
+                                View Blueprint
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-baseline mb-2">
+                        <h2 class="text-lg font-black tracking-tight uppercase group-hover:text-[#ccff00] transition-colors">Drop 03: Cyber-Knit</h2>
+                        <span class="text-xs font-mono text-gray-500">16 Pcs</span>
+                    </div>
+                    <p class="text-gray-400 text-xs font-light mb-3">Parametric 3D-knitted modular panels with high-tensile bonding.</p>
+                    <div class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Archive 2023</div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="py-16 px-6 sm:px-10 border-t border-white/10 bg-[#060606] text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center space-x-3">
+                <span class="text-xl font-black tracking-tighter brand-font">NOVA STUDIO<span class="text-[#ccff00]">.</span></span>
+            </a>
+            <div class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-bold">
+                &copy; <span class="copyright-year">2026</span> NOVA ARCHIVE. ALL RIGHTS RESERVED.
+            </div>
+            <div class="text-xs text-gray-400 space-x-6">
+                <a href="index.html" class="hover:text-[#ccff00]">Home</a>
+                <a href="designer.html" class="hover:text-[#ccff00]">Designer</a>
+                <a href="connect.html" class="hover:text-[#ccff00]">Connect</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

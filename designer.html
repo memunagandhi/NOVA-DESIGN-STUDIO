@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>The Designer & Aesthetic Philosophy | NOVA DESIGN STUDIO</title>
+    <meta name="title" content="The Designer & Aesthetic Philosophy | NOVA DESIGN STUDIO">
+    <meta name="description" content="Meet the creator behind NOVA DESIGN STUDIO. A multidisciplinary digital couture designer fusing virtual garments, tactile tailoring, and archival streetwear culture.">
+    <meta name="keywords" content="Nova designer, digital couture creator, virtual fashion bio, cyberpunk clothing designer, CLO 3D fashion">
+    <meta name="author" content="NOVA DESIGN STUDIO">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://nova-design-studio.onrender.com/designer.html">
+
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="theme-color" content="#080808">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://nova-design-studio.onrender.com/designer.html">
+    <meta property="og:site_name" content="NOVA DESIGN STUDIO">
+    <meta property="og:title" content="The Designer & Aesthetic Philosophy | NOVA DESIGN STUDIO">
+    <meta property="og:description" content="Meet the creator behind NOVA DESIGN STUDIO. Exploring tactile computation and high-end digital silhouettes.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nova-design-studio.onrender.com/designer.html">
+    <meta property="twitter:title" content="The Designer & Aesthetic Philosophy | NOVA DESIGN STUDIO">
+    <meta property="twitter:description" content="Exploring tactile computation and high-end digital silhouettes.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nova",
+      "jobTitle": "Lead Digital Couture Designer & Creative Director",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "NOVA DESIGN STUDIO",
+        "url": "https://nova-design-studio.onrender.com/"
+      },
+      "url": "https://nova-design-studio.onrender.com/designer.html",
+      "description": "Multidisciplinary designer exploring the tactile nature of digital garments and streetwear standards in virtual and physical spaces."
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nova-black': '#080808',
+                        'nova-neon': '#ccff00',
+                        'nova-gray': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/nova.css">
+    <script src="js/nova.js" defer></script>
+</head>
+<body class="antialiased bg-[#080808] text-white selection:bg-[#ccff00] selection:text-black">
+
+    <!-- Global Header -->
+    <header>
+        <nav class="fixed top-0 left-0 w-full z-50 px-6 sm:px-10 py-6 sm:py-8 flex justify-between items-center backdrop-blur-md bg-[#080808]/50 border-b border-white/5 transition-all duration-300">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group" aria-label="NOVA STUDIO Home">
+                <div class="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center group-hover:border-[#ccff00] transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-none stroke-current text-white group-hover:text-[#ccff00] transition-colors" stroke-width="2">
+                        <path d="M4 18V6l8 10V6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16l8-10v12" stroke="#ccff00" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="text-xl sm:text-2xl font-bold tracking-tighter brand-font">NOVA STUDIO<span class="text-[#ccff00]">.</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-10 text-[11px] uppercase font-bold tracking-[0.3em]">
+                <a href="index.html" class="hover-link text-gray-300 hover:text-white">Home</a>
+                <a href="collections.html" class="hover-link text-gray-300 hover:text-white">Archive</a>
+                <a href="designer.html" class="hover-link active-nav text-[#ccff00]" aria-current="page">The Designer</a>
+                <a href="connect.html" class="hover-link text-gray-300 hover:text-white">Connect</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-end w-10 h-10 space-y-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ccff00] p-1 rounded" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span class="w-7 h-0.5 bg-white transition-transform"></span>
+                <span class="w-5 h-0.5 bg-[#ccff00] transition-all"></span>
+                <span class="w-6 h-0.5 bg-white transition-transform"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Slide-over Drawer -->
+    <div id="mobile-menu-drawer" class="fixed inset-0 z-[100] hidden opacity-0 transition-opacity duration-300 mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-xl" id="mobile-menu-close"></div>
+        <div class="absolute top-0 right-0 w-full sm:w-80 h-full bg-[#0d0d0d] border-l border-white/10 p-8 flex flex-col justify-between transform translate-x-full mobile-nav-panel">
+            <div>
+                <div class="flex justify-between items-center mb-12">
+                    <span class="text-xs uppercase font-bold tracking-[0.3em] text-[#ccff00]">Navigation</span>
+                    <button class="text-white hover:text-[#ccff00] p-2 text-xl focus:outline-none" aria-label="Close menu" onclick="document.getElementById('mobile-menu-close').click()">
+                        ✕
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-6 text-xl uppercase font-black tracking-tight">
+                    <a href="index.html" class="mobile-nav-link text-gray-300 hover:text-white">Home</a>
+                    <a href="collections.html" class="mobile-nav-link text-gray-300 hover:text-white">Archive</a>
+                    <a href="designer.html" class="mobile-nav-link text-[#ccff00]">The Designer</a>
+                    <a href="connect.html" class="mobile-nav-link text-gray-300 hover:text-white">Connect</a>
+                </nav>
+            </div>
+            <div class="pt-8 border-t border-white/10">
+                <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-500 block mb-4">Direct Inquiries</span>
+                <a href="mailto:hello@novastudio.com" class="text-sm font-light text-gray-300 hover:text-[#ccff00] transition-colors">hello@novastudio.com</a>
+                <div class="flex space-x-6 mt-6 text-xs text-gray-400 font-semibold tracking-wider">
+                    <a href="#" class="hover:text-[#ccff00]">Instagram</a>
+                    <a href="#" class="hover:text-[#ccff00]">TikTok</a>
+                    <a href="#" class="hover:text-[#ccff00]">X / Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-36 sm:pt-48 pb-32 sm:pb-40 px-6 sm:px-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-20 items-center">
+            
+            <!-- Designer Portrait with Interactive Editorial Frame -->
+            <div class="lg:col-span-5 nova-reveal">
+                <div class="relative group">
+                    <div class="relative overflow-hidden aspect-[4/5] rounded-sm border border-white/15 bg-neutral-900 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Nova - Founder & Creative Director of NOVA DESIGN STUDIO" 
+                             class="w-full h-full object-cover filter grayscale contrast-125 transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                             loading="eager">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <!-- Cyber Stamp Tag -->
+                    <div class="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-8 bg-[#0a0a0a] border border-[#ccff00]/40 p-4 sm:p-5 backdrop-blur-xl shadow-2xl">
+                        <span class="text-[9px] uppercase tracking-[0.3em] text-gray-400 font-bold block mb-1">Director</span>
+                        <span class="text-xl sm:text-2xl font-black brand-font text-white">NOVA<span class="text-[#ccff00]">_01</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio / Manifesto -->
+            <div class="lg:col-span-7 flex flex-col justify-center nova-reveal" style="transition-delay: 150ms;">
+                <span class="text-[#ccff00] text-[10px] uppercase font-bold tracking-[0.5em] mb-4 sm:mb-6 block">Creative Director &amp; Technologist</span>
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter uppercase mb-8 leading-[0.9]">
+                    CRAFTING <br> 
+                    THE <span class="editorial-serif italic font-normal text-white">Future.</span>
+                </h1>
+                
+                <p class="text-gray-300 text-base sm:text-xl font-light leading-relaxed mb-6">
+                    Nova is a multidisciplinary fashion innovator based in digital computational space. My body of work investigates the tactile nature of virtual cloth and the seamless migration of garments across physical bodies and metaverse avatars.
+                </p>
+
+                <p class="text-gray-400 font-light leading-relaxed mb-10 text-sm sm:text-base">
+                    By merging sustainable digital simulation pipelines with high-end archival streetwear silhouettes, Nova Studio functions as both an atelier and an experimental research laboratory establishing the next decade of aesthetic standards.
+                </p>
+
+                <!-- Core Disciplines -->
+                <div class="border-t border-white/10 pt-8 mb-10">
+                    <span class="text-[10px] uppercase font-bold tracking-[0.3em] text-gray-500 block mb-4">Core Disciplines &amp; Tooling</span>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="text-xs uppercase font-semibold tracking-wider px-3.5 py-1.5 border border-white/20 bg-white/5 rounded-full text-gray-300">CLO 3D Couture</span>
+                        <span class="text-xs uppercase font-semibold tracking-wider px-3.5 py-1.5 border border-[#ccff00]/40 bg-[#ccff00]/10 rounded-full text-[#ccff00]">Procedural Houdini Textiles</span>
+                        <span class="text-xs uppercase font-semibold tracking-wider px-3.5 py-1.5 border border-white/20 bg-white/5 rounded-full text-gray-300">Parametric Patternmaking</span>
+                        <span class="text-xs uppercase font-semibold tracking-wider px-3.5 py-1.5 border border-white/20 bg-white/5 rounded-full text-gray-300">Spatial AR Runways</span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="connect.html" class="inline-flex items-center space-x-4 bg-[#ccff00] text-black px-8 py-4 font-bold text-xs uppercase tracking-[0.3em] hover:bg-white transition-all shadow-lg hover:shadow-[#ccff00]/30">
+                        <span>Initiate Collaboration</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="py-16 px-6 sm:px-10 border-t border-white/10 bg-[#060606] text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center space-x-3">
+                <span class="text-xl font-black tracking-tighter brand-font">NOVA STUDIO<span class="text-[#ccff00]">.</span></span>
+            </a>
+            <div class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-bold">
+                &copy; <span class="copyright-year">2026</span> NOVA ARCHIVE. BIO SYNCHRONIZED.
+            </div>
+            <div class="text-xs text-gray-400 space-x-6">
+                <a href="index.html" class="hover:text-[#ccff00]">Home</a>
+                <a href="collections.html" class="hover:text-[#ccff00]">Archive</a>
+                <a href="connect.html" class="hover:text-[#ccff00]">Connect</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
