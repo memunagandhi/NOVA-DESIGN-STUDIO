@@ -30,6 +30,22 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="canonical" href="https://nova-design-studio.onrender.com/">
 
+    <!-- Google Search Console (GSC) Verification -->
+    <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN_REPLACE_ME">
+
+    <!-- Google Analytics 4 (GA4) Global Site Tag (gtag.js) -->
+    <!-- Replace G-XXXXXXXXXX with your real GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            send_page_view: true,
+            anonymize_ip: true
+        });
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/nova.css">
@@ -422,18 +438,34 @@
                 </div>
 
                 <div>
-                    <h3 class="text-[10px] uppercase font-mono tracking-widest mb-4 text-white">Editorial</h3>
-                    <ul class="space-y-2.5 text-xs font-light">
+                    <h3 class="text-[10px] uppercase font-mono tracking-widest mb-4 text-white">Editorial &amp; Share</h3>
+                    <ul class="space-y-2.5 text-xs font-light mb-4">
                         <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a></li>
                         <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Pinterest</a></li>
-                        <li><a href="https://vogue.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Archive Press</a></li>
+                        <li><a href="sitemap.xml" class="hover:text-white transition-colors font-mono text-[11px] text-zinc-400">XML Sitemap &rarr;</a></li>
                     </ul>
+
+                    <!-- Social Share & Like Buttons -->
+                    <div class="flex flex-col space-y-2 pt-2">
+                        <button type="button" class="social-share-btn text-left px-3 py-1.5 border border-white/20 text-[10px] font-mono uppercase tracking-wider text-zinc-300 hover:text-white hover:border-white transition-all">
+                            Share Presentation
+                        </button>
+                        <button type="button" class="atelier-like-btn text-left px-3 py-1.5 border border-white/20 text-[10px] font-mono uppercase tracking-wider text-zinc-400 hover:text-white hover:border-white transition-all flex items-center justify-between">
+                            <span>Appreciate Archive</span>
+                            <span>&hearts; <span class="like-count">148</span></span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="col-span-2 sm:col-span-1">
                     <h3 class="text-[10px] uppercase font-mono tracking-widest mb-4 text-white">Curator</h3>
                     <p class="text-xs text-zinc-400 font-light mb-3">Memuna Gandhi, Creative Director.</p>
-                    <a href="mailto:hello@novastudio.com" class="text-xs text-white hover:underline font-mono">hello@novastudio.com</a>
+                    <a href="mailto:hello@novastudio.com" class="text-xs text-white hover:underline font-mono block mb-4">hello@novastudio.com</a>
+                    
+                    <!-- Trigger Upcoming Collection Popup -->
+                    <button type="button" class="open-drop-modal-trigger text-[10px] uppercase font-mono tracking-wider px-3 py-1.5 bg-white/10 hover:bg-white hover:text-black border border-white/20 transition-all text-white">
+                        Upcoming Drop Preview &rarr;
+                    </button>
                 </div>
             </div>
 
@@ -443,11 +475,52 @@
             <div>
                 &copy; <span class="copyright-year">2026</span> NOVA ATELIER. ALL RIGHTS RESERVED.
             </div>
-            <div>
-                PRESENTATION EDITION VOL. IV
+            <div class="flex items-center space-x-4">
+                <a href="sitemap.xml" class="hover:text-zinc-300">Sitemap</a>
+                <span>&bull;</span>
+                <a href="thankyou.html" class="hover:text-zinc-300">Confirmation</a>
+                <span>&bull;</span>
+                <span>EDITION VOL. IV</span>
             </div>
         </div>
     </footer>
+
+    <!-- Upcoming Collections Popup / Modal (Editorial Teaser) -->
+    <div id="upcoming-drop-modal" class="fixed inset-0 z-[120] hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-label="Upcoming Collection Announcement">
+        <div class="absolute inset-0 bg-black/85 backdrop-blur-md" id="drop-modal-backdrop"></div>
+        <div class="relative z-10 max-w-lg w-full presentation-frame p-6 sm:p-10 bg-[#121214] shadow-2xl border border-white/20">
+            <div class="flex justify-between items-center mb-6 pb-3 border-b border-white/10">
+                <span class="mono-tag text-zinc-400">UPCOMING PRIVATE EXHIBITION</span>
+                <button type="button" id="close-drop-modal" class="text-zinc-400 hover:text-white text-xl p-1 focus:outline-none" aria-label="Close Announcement">&times;</button>
+            </div>
+
+            <div class="relative aspect-[16/9] overflow-hidden mb-6 bg-zinc-900 border border-white/10">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85" 
+                     alt="Upcoming Drop 02 — High fashion structured silhouette teaser" 
+                     class="w-full h-full object-cover">
+                <div class="absolute top-3 left-3 bg-black/80 px-2.5 py-1 text-[9px] font-mono text-zinc-300 uppercase tracking-widest">
+                    DROP 02 PREVIEW // AW 2026
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-bold uppercase brand-font text-white mb-2">
+                Drop 02: Structural Chiaroscuro
+            </h3>
+            <p class="text-zinc-300 text-xs sm:text-sm font-light leading-relaxed mb-6">
+                Limited to 12 numbered garments crafted from heavyweight bonded wool and silk crepe. Priority private appointments open next month.
+            </p>
+
+            <form onsubmit="event.preventDefault(); alert('Priority invitation registered.'); document.getElementById('close-drop-modal').click();" class="space-y-3">
+                <input type="email" required placeholder="Enter email for private lookbook access..." 
+                       class="editorial-input w-full py-2.5 px-2 text-xs font-light bg-black/40 border border-white/20 placeholder-zinc-500 text-white">
+                <div class="flex items-center gap-3 pt-2">
+                    <button type="submit" class="w-full py-3 bg-white text-black text-xs font-bold uppercase tracking-[0.2em] hover:bg-zinc-200 transition-colors">
+                        Request Private Access
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>

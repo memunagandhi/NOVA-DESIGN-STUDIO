@@ -164,7 +164,7 @@
                         <span class="text-[10px] font-mono text-zinc-500">PLATE INQ-04</span>
                     </div>
 
-                    <form id="contact-form" class="space-y-7" onsubmit="event.preventDefault(); alert('Inquiry received. The atelier director will review your project and respond within 24 hours.'); this.reset();">
+                    <form id="contact-form" class="space-y-7" onsubmit="event.preventDefault(); if (typeof gtag === 'function') { gtag('event', 'generate_lead', { 'event_category': 'Inquiry', 'event_label': 'Bespoke Commission' }); } window.location.href = 'thankyou.html';">
                         
                         <div>
                             <label for="identity" class="text-[10px] uppercase font-mono tracking-widest text-zinc-400 block mb-2">

@@ -161,4 +161,84 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.copyright-year').forEach(el => {
         el.textContent = new Date().getFullYear();
     });
+
+    // ----------------------------------------
+    // 7. UPCOMING COLLECTION POPUP / MODAL
+    // ----------------------------------------
+    const popupModal = document.getElementById('upcoming-drop-modal');
+    const popupCloseBtn = document.getElementById('close-drop-modal');
+    const popupBackdrop = document.getElementById('drop-modal-backdrop');
+    const popupOpenBtns = document.querySelectorAll('.open-drop-modal-trigger');
+
+    const openDropModal = () => {
+        if (!popupModal) return;
+        popupModal.classList.remove('hidden');
+        setTimeout(() => popupModal.classList.remove('opacity-0'), 10);
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeDropModal = () => {
+        if (!popupModal) return;
+        popupModal.classList.add('opacity-0');
+        setTimeout(() => {
+            popupModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }, 300);
+    };
+
+    if (popupCloseBtn) popupCloseBtn.addEventListener('click', closeDropModal);
+    if (popupBackdrop) popupBackdrop.addEventListener('click', closeDropModal);
+    popupOpenBtns.forEach(btn => btn.addEventListener('click', openDropModal));
+
+    // Auto-prompt popup once per session after 8 seconds of engagement
+    if (popupModal && !sessionStorage.getItem('nova_drop_modal_seen')) {
+        setTimeout(() => {
+            openDropModal();
+            sessionStorage.setItem('nova_drop_modal_seen', 'true');
+        }, 8000);
+    }
+
+    // ----------------------------------------
+    // 8. SOCIAL SHARING & LIKE COUNTER
+    // ----------------------------------------
+    // Social Native Share API or Fallback Copy
+    document.querySelectorAll('.social-share-btn').forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const shareData = {
+                title: 'NOVA ATELIER — Fashion Design Presentation Archive',
+                text: 'Architectural silhouettes, tactile drapery, and contemporary high-fashion presentation archive.',
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                } catch (err) {
+                    // user cancelled share
+                }
+            } else {
+                navigator.clipboard.writeText(window.location.href);
+                const originalText = btn.textContent;
+                btn.textContent = 'LINK COPIED!';
+                setTimeout(() => { btn.textContent = originalText; }, 2000);
+            }
+        });
+    });
+
+    // Interactive Like / Appreciation Button with LocalStorage Persistence
+    document.querySelectorAll('.atelier-like-btn').forEach(btn => {
+        const countSpan = btn.querySelector('.like-count');
+        const pageKey = 'nova_likes_' + (window.location.pathname.split('/').pop() || 'index');
+        let currentLikes = parseInt(localStorage.getItem(pageKey) || '148', 10);
+        if (countSpan) countSpan.textContent = currentLikes;
+
+        btn.addEventListener('click', () => {
+            currentLikes += 1;
+            localStorage.setItem(pageKey, currentLikes.toString());
+            if (countSpan) countSpan.textContent = currentLikes;
+            btn.classList.add('bg-white', 'text-black');
+            btn.classList.remove('text-zinc-400');
+        });
+    });
 });
+
