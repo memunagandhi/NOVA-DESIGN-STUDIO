@@ -151,15 +151,13 @@
         <section class="min-h-screen flex flex-col justify-end px-6 sm:px-10 pb-16 sm:pb-24 relative overflow-hidden" aria-label="Hero Editorial">
             <!-- Hero Background Image & Overlays (Fixed visibility bug: proper z-index and overlays) -->
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <img id="hero-img" 
-                     src="https://images.unsplash.com/photo-1539109132314-3477524c8d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=2400&q=85" 
+                <img src="https://images.unsplash.com/photo-1539109132314-3477524c8d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=2400&q=85" 
                      alt="NOVA Digital Couture Editorial High Fashion Model in Minimalist Silhouette" 
-                     class="w-full h-full object-cover object-center opacity-70 grayscale hover:grayscale-0 transition-all duration-1000 scale-100 filter contrast-125"
+                     class="w-full h-full object-cover object-center opacity-60"
                      loading="eager"
                      fetchpriority="high">
-                <!-- Multi-layer cinematic vignette for maximum readability and mood -->
-                <div class="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/40 to-[#080808]/75 pointer-events-none"></div>
-                <div class="absolute inset-0 bg-radial-vignette pointer-events-none"></div>
+                <!-- Simple dark overlay for text readability -->
+                <div class="absolute inset-0 bg-black/60 pointer-events-none"></div>
             </div>
             
             <!-- Hero Content -->
@@ -176,7 +174,7 @@
 
                 <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-[11vw] leading-[0.85] font-black tracking-tighter mb-8 sm:mb-10 uppercase text-white">
                     DIGITAL <br> 
-                    <span class="editorial-serif italic font-normal lowercase tracking-normal text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">Couture.</span>
+                    <span class="editorial-serif italic font-normal lowercase tracking-normal text-white">Couture.</span>
                 </h1>
                 
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 pt-4">
@@ -239,9 +237,8 @@
                     <div class="relative overflow-hidden rounded-sm border border-white/10 group aspect-[4/5] bg-neutral-900">
                         <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
                              alt="NOVA Drop 01 The Void Editorial lookbook model in cyber couture outerwear" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                              loading="lazy">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity"></div>
                     </div>
                     <!-- Spec Sheet Badge -->
                     <div class="absolute -bottom-6 -left-4 sm:-bottom-8 sm:-left-8 w-32 h-32 sm:w-40 sm:h-40 border border-white/20 p-4 sm:p-6 flex flex-col justify-center items-center backdrop-blur-xl bg-[#080808]/90 shadow-2xl">
